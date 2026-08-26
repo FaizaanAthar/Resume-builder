@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #f5f6f4;
+  color: #16241f;
+  font-family: "Inter", sans-serif;
+}
+
+textarea,
+input,
+button {
+  font-family: "Inter", sans-serif;
+}
+
+::selection {
+  background: #0b6e5c;
+  color: #fff;
+}
+
+button:focus-visible,
+textarea:focus-visible,
+input:focus-visible {
+  outline: 2px solid #0b6e5c;
+  outline-offset: 2px;
+}
+
+@media (max-width: 860px) {
+  .rb-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
